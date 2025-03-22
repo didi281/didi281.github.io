@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucrare atestat</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./9s/stylesheet.css">
+    </head>
+    <body>
+        <div class="header-wrapper">
+            <div class="container-wrap">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="#">Matematică pentru <span>Admitere </span></a>
+                    </div>
+                    <div class="nav-menu">
+                        <ul class="menu-items">
+                           <li class="is-current"> <a href="noua.html">a IX-a</a></li>
+                           <li> <a href="zece.html">a X-a</a></li>
+                           <li> <a href="a11a.html">a XI-a</a></li>
+                           <li> <a href="a12a.html">a XII-a</a></li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <a href="pagp.html">Acasă</a>
+                        </div>
+                    </div>
+                 <div class="toggleicon">
+                    <i class="bx bx-menu">
+
+                    </i>
+                 </div>
+                    </div>
+                <div class="hero-wrapper">
+                <div class="left-content"> 
+                    <div class="welcome-title">
+                        Lucrare de atestat realizată de <b>Secară Diana-Gabriela</b> <br>
+                        Prof. coordonator <b>Elena Andone</b> <br>
+                        <i><b>Promoția 2024-2025</b></i>
+                    </div>
+                    <div class="txts-wrapper">
+                        <div class="text-static">
+                            Ce conține proiectul?
+                        </div>
+                        <ul class="txts-typing">
+                            <li><span>Algebră</span></li>
+                            <li><span>Trigonometrie</span></li>
+                            <li><span>Geometrie vectorială</span></li>
+                            <li><span>Geometrie analitică</span></li>
+                            <li><span>Analiză</span></li>
+                        </ul>
+                    </div>
+                    <p class="para"> În cadrul lucrării mele de atestat am încercat să cuprind toate informațiile utile ale materiei „Matematică” pentru examenul de bacalaureat și o bază pentru admiterea la facultățile de profil.</p>
+                <div class="social-wrap"> 
+                    <h3> Social media</h3>
+                    <div class="icons-wrap">
+                        <a href="https://www.facebook.com/share/16B6GM4ocY/?mibextid=wwXIfr"> <i class="bx bxl-figma"></i></a>
+                        <a href="https://ro.wikipedia.org/wiki/Pagina_principal%C4%83"> <i class="bx bxl-behance"></i></a>
+                        <a href="https://www.instagram.com/dia.secara?igsh=MXViMjNkMnFjOWpodg%3D%3D&utm_source=qr"> <i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.canva.com/ro_ro/"> <i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="hero-btn">
+                    <div class="btn-wrap">
+                    <a href="#"> Descarcă!<i class="bx bx-download"></i></a>
+                    </div>
+                </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="hero-image-box">
+                        <img src="./9i/mate1.PNG" alt="Hero Images">
+                    </div>
+                </div>
+             </div>
+
+            </div>
+        </div>
+    <script>
+        const navItems = document.querySelectorAll(".menu-items li");
+        navItems.forEach(item => {
+            item.addEventListener('click', function(){
+                navItems.forEach(nav => nav.classList.remove('is-current'));
+                this.classList.add('is-current')
+            })
+        });
+
+        document.addEventListener('DOMContentLoaded', ()=>{
+            const toggleIcon = document.querySelector('.toggleicon');
+            const navMenu = document.querySelector('.nav-menu');
+            toggleIcon.addEventListener('click', ()=> {
+                navMenu.classList.toggle('active');
+                toggleIcon.classList.toggle('active');
+            })
+        });
+     </script>
+    </body>
+</html>
