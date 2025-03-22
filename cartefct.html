@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte funcții</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/fct.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li class="is-current"> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+    <div id="p1" class="paper">
+   <div class="front">
+      <div id="f1" class="front-content">
+      <h1>Funcțiile exponențiale</h1> <br> <br>
+        <div style="font-size:large">
+          <p> Fie \( a \gt 0 \rightarrow a^x \gt 0, \forall x \in \mathbb{R}\)  </p> <br>
+          <p> \(a^0=1, \forall a \in \mathbb{R}\) </p> <br>
+          <p> \(a^{-x}=\frac{1}{a^x}, \forall a,x \in \mathbb{R}\)</p> <br>
+        </div>
+          <img src="./10i/exp.png" width="100%">
+  </div>
+   </div>
+   <div class="back">
+      <div id="b1" class="back-content">
+        <h2>Proprietățile exponențialelor</h2>
+        <b style="font-size:medium">
+            \begin{aligned} a^x \cdot a^y= a^{x+y}\end{aligned}
+            \begin{aligned} \frac{a^x}{a^y}=a^{x-y}\end{aligned} 
+            \begin{aligned} {(a^x)}^y=a^{x \cdot y}\end{aligned}
+            \begin{aligned} {(a \cdot b)}^x=a^x \cdot b^x \end{aligned}
+            \begin{aligned} { (\frac{a}{b})}^x= \frac{a^x}{b^x} \end{aligned}
+        </b>
+        <h2>Cum se compară?</h2>
+        <div style="text-align: center; font-size:large">
+        <p> Dacă \( a \gt 1\), atunci \( a^x \lt a^y \iff x \lt y\)</p>
+        <p> Dacă \( a \lt 1\), atunci \( a^x \lt a^y \iff x \gt y\)</p>
+        </div>
+        <br> <br>
+      </div>
+   </div>
+    </div>
+    <div id="p2" class="paper">
+      <div class="front">
+         <div id="f2" class="front-content">
+          <h1>Funcțiile logaritmice</h1> <br>
+          <li> <b>Definiție</b>: Numim logaritm în baza a din numărul b, acel exponent real x la care trebuie ridicată baza a, pentru a obține b, adică \( a^x=b\).  </li> <br>
+          <li> <b>Notație</b>: x= \(\log_a b\)</li> <br>
+          <li> <b>Observație</b>: \(\log_a 1=0\) și \(\log_a a=1\).</li> <br>
+          <li> <b>Logaritmi particulari</b>: lg x= \(\log_{10} x\)(logaritm zecimal) și ln x=\(\log_e x\)(logaritm natural).</li> <br>
+         <img src="./10i/lg.PNG" width="100%">
+        </div>
+      </div>
+      <div class="back">
+         <div id="b2" class="back-content">
+            <h2>Proprietățile logaritmilor</h2>
+            <b>
+                \begin{aligned} \log_a x + \log_a y= \log_a{(x \cdot y)}\end{aligned}
+                \begin{aligned} \log_a x - \log_a y= \log_a{\frac ab}\end{aligned} 
+                \begin{aligned} \log_a {x^y}=y \cdot log_a x\end{aligned}
+                \begin{aligned} \log_a x= \frac{ \log_b x}{ \log_b a} \end{aligned}
+                \begin{aligned}  a^{ \log_a x}=x, \forall x \gt 0  \end{aligned}
+            </b>
+        </div>
+      </div>
+      </div>
+       <div id="p3" class="paper">
+          <div class="front">
+             <div id="f3" class="front-content">
+                <h2>Cum se compară?</h2>
+                <div style="font-size:large">
+                <p> Dacă \( a \gt 1\), atunci \( \log_a x \lt \log_a y \iff x \lt y\)</p>
+                <p> Dacă \( a \lt 1\), atunci \( \log_a x \lt \log_a y \iff x \gt y\)</p>
+                </div>
+  </div>
+         
+          </div>
+          <div class="back">
+             <div id="b3" class="back-content">
+              <h2> Sfârșit</h2> <br>
+          </div>
+          </div>
+    </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

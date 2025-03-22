@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte polinoame</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/fct.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li class="is-current"> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+  <div id="p1" class="paper">
+ <div class="front">
+    <div id="f1" class="front-content">
+      <h1>Polinoame</h1> <br> 
+      <div style="font-size:medium">
+      <li> Teorema împărțirii cu rest: Fiind date 2 polinoame f,g; există două polinoame unice q,r cu grad r \(\lt\) grad g astfel încât \(f=g \cdot q +r\)</li>
+      <li>Teorema restului: Restul împărțirii unui polinom f la „X-a” este r=f(a) </li> <br>
+      <li>Schema lui Horner: Câtul și restul împărțirii unui polinom \(f=a_nX^n+a_{n-1}X^{n-1}+ \dots + a_1X+ a_0\) la polinomul \(g=X-a\)</li> <br>
+      <img src="./12i/horner2.PNG" width="100%" height="25%">
+    </div>
+    </div>
+
+ </div>
+ <div class="back">
+    <div id="b1" class="back-content">
+        <h1>Polinoame</h1> <br> 
+        <li> Câtul: \(q=b_{n-1}X^{n-1}+ \dots + b_1X + b_0\)</li>
+        <li> Restul: \(r=a \cdot b_0 + a_0\)</li>
+        <li> Un polinom f este divizibil cu un polinom g, dacă \(f= g \cdot h\). Restul împărțirii lui f la g este 0.</li>
+        <li>Polinoamele se pot descompune pe \(\mathbb{R}\) până la cel mult gradul II.</li>
+        <li>Se numește rădăcină a polinomului f, un număr a dacă f(a)=0.</li>
+    </div>
+
+ </div>
+  </div>
+  <div id="p2" class="paper">
+    <div class="front">
+       <div id="f2" class="front-content">
+        <h1>Polinoame</h1> <br>
+        <div style="padding: 20px;">
+        <li >Teorema lui Bezout: Dacă (X-a)/f atunci a este rădăcină a lui f.</li>
+        <li >Dacă (X-a)/f de mai multe ori, atunci a se numește rădăcină multiplă(simplă,dublă,triplă).</li>
+        <li >Polinoamele se pot descompune pe \(\mathbb{C}\) astfel: \(f=a_n(X-x_1)(X-x_2) \cdot \dots \cdot (X-x_n) \)</li>
+     </div>
+    </div>
+    </div>
+    <div class="back">
+       <div id="b2" class="back-content">
+           <h3>Relațiile lui Viète</h3>
+           <div style="font-size: medium">
+           <li>Pentru un polinom \(f=a_nX^n+a_{n-1}X^{n-1}+ \dots + a_1X+ a_0\), cu rădăcinile \(x_1,x_2,x_3, \dots, x_n \) există următoarele relații: \(S_1 = x_1 + x_2 + \dots + x_n = -\frac{a_{n-1}}{a_n}\)  \(S_2 = x_1 x_2 + x_1 x_3 + \dots + x_{n-1} x_n = \frac{a_{n-2}}{a_n}\) \(S_3 = x_1 x_2 x_3 + \dots + x_{n-2} x_{n-1} x_n = -\frac{a_{n-3}}{a_n}\) \(\vdots\) <br> \(S_n = (-1)^n \frac{a_0}{a_n}\)</li> <br>
+           <li>Cazuri particulare: n=2 avem \(S_1=x_1+x_2=-\frac ba\) <br> \(S_2=x_1 \cdot x_2= \frac ca\)</li>
+        </div>
+        </div>
+    </div>
+     </div>
+     <div id="p3" class="paper">
+        <div class="front">
+           <div id="f3" class="front-content">
+         <li> Important: \(x_1^2+x_2^2+ x_3^2+ \dots + x_n^2= S_1^2-2 \cdot S_2\) </li> <br>
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b3" class="back-content">
+               <h2> Sfârșit</h2>
+        </div>
+    </div>
+  </div>
+</div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

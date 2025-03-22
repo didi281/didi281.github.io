@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte grupuri</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/fct.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li class="is-current"> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+  <div id="p1" class="paper">
+ <div class="front">
+    <div id="f1" class="front-content">
+      <h1>Legi de compoziție</h1> <br> <br>
+      <div style="font-size:large">
+      <li>Fie (M,*) o structură algebrică.</li>
+      <li>O submulțime \( H \subset M\) se numește <b>parte stabilă</b> a lui M în raport cu „*” dacă \(\forall x,y \in H \rightarrow x*y \in H\) </li>
+      <li>Legea „*” este asociativă dacă \((x * y)*z=x*(y*z), \; \forall x,y,z \in M\)</li>
+      <li>Legea „*” este comutativă dacă \(x*y=y*x, \; \forall x,y \in M\)</li>
+      <li>Legea „*” admite element neutru dacă \( \exists e \in M \; \; x*e=e*x=x, \; \forall x \in M\)</li>
+      <li>Un element x se numește simetrizabil dacă \( \exists x' \in M \; \; x*x'=x'*x=e\)</li>
+    </div>
+    </div>
+
+ </div>
+ <div class="back">
+    <div id="b1" class="back-content">
+        <h1>Legi de compoziție</h1>
+        <li> (M,*) se numește monoid, dacă legea „*” este asociativă și admite element neutru.</li>
+        <li>Dacă legea „*” este și comutativă, atunci monoidul este comutativ.</li> 
+        <li> (G,*) se numește grup, dacă legea „*” este asociativă, admite element neutru și toate elementele sunt simetrizabile. </li> 
+        <li> Dacă legea „*” este și comutativă, atunci grupul este comutativ.</li> 
+    </div>
+
+ </div>
+  </div>
+  <div id="p2" class="paper">
+    <div class="front">
+       <div id="f2" class="front-content">
+        <h2> Morfisme de grupuri</h2> <br>
+        <div style="font-size:large">
+        <li> Fie \((G1,*) \text{și} (G2, \circ)\) două grupuri având elementele neutre e1 și e2.</li> 
+        <li> O funcție \(f: G1 \to G2\) se numește morfism de grupuri dacă \(f(x *y)=f(x) \circ f(y), \; \forall x,y \in G1\)</li> 
+        <li> Dacă f este morfism de grupuri și f este bijectivă, atunci f este <b>izomorfism</b></li> 
+        <li> O submulțime \( H \subset M\) se numește subgrup al lui G dacă H este parte stabilă și simetricul oricărui element din H este din H. </li>
+    </div>
+    </div>
+   
+    </div>
+    <div class="back">
+       <div id="b2" class="back-content">
+           <h3> Inele</h3>
+           <div style="font-size:medium">
+           <li> \( (A,*,\circ)\) se numește inel, dacă \( (A,*)\) este grup abelian cu elementul neutru \(\theta\), \( (A,\circ)\) este monoid cu elementul neutru e, iar legea „\(\circ\)” este distributivă față de „*”.</li>
+           <li>Un inel \((K,*,\circ)\) este corp, dacă \(\forall x \in K, \; x \neq \theta, \; \exists x' \in K \;\) \( x \circ x' = x' \circ x=e\)</li>
+           <li>Fie \((A1, *, \circ)\) și \((A2, \land, \bot)\) cu elementele neutre \(e, \theta\).</li>
+           <li>O funcție \(f : A1 \to A2\) este morfism de inele dacă \(f(x*y)=f(x) \land f(y), \; \forall x,y \in A1\) \(f(x \circ y)=f(x) \bot f(y), \; \forall x,y \in A1\) \(f(e1)=e2\)</li>
+        </div>
+          </div>
+    </div>
+     </div>
+     <div id="p3" class="paper">
+        <div class="front">
+           <div id="f3" class="front-content">
+         <h2>Inelul claselor de resturi modulo n</h2> <br>
+         <li> \(\mathbb{Z}_n=\{\hat 1, \hat 2, \hat 3, \dots \widehat{n-1} \}\)</li> <br>
+         <li>\((\mathbb{Z}_n,+, \cdot)\) este inel comutativ cu</li>
+         <li> elementul nul \(\hat 0\)</li>
+         <li> elementul unitate \(\hat 1\)</li>
+         <li> opusul lui \(\hat a\) este \(\widehat{n-a}\)</li>
+         <li> inversul lui \(\hat a\)  este \({\hat a}^{-1}= \hat a \cdot {\hat a}^{-1}={\hat a}^{-1} \cdot \hat a= \hat 1\)</li>
+        </div>
+       
+        </div>
+        <div class="back">
+           <div id="b3" class="back-content">
+               <h2> Sfârșit</h2>
+                 </div>
+        </div>
+    </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

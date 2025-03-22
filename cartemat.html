@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte matrici</title>
+    <link rel="stylesheet" href="./9s/cartealg.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/matrice.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li class="is-current"> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+  <div id="p1" class="paper">
+ <div class="front">
+    <div id="f1" class="front-content">
+    <h1>Matrici</h1>  <br> <br> <br>
+    <img src="./11i/matrice1.PNG" width="100%">
+</div>
+ </div>
+ <div class="back">
+    <div id="b1" class="back-content">
+        <h1> Operații cu matrici</h1>
+        <li> Adunarea a două matrici se realizează adunând elementele de pe poziția i și j din prima matrice și a doua matrice.</li>
+    <li>Înmulțirea matricilor se realizează astfel</li>
+    <img src="./11i/inmultire.PNG" width="90%">
+    </div>
+ </div>
+  </div>
+  <div id="p2" class="paper">
+    <div class="front">
+       <div id="f2" class="front-content">
+        <h2>Operații cu matrici</h2> <br>
+        <li>Înmulțirea elementelor matricii cu un scalar se realizează înmulțind fiecare element al matricii cu scalarul respectiv.</li>
+       <li>Adunarea matricelor este asociativă și comutativă.</li>
+       <li>Matricea nulă, notată O, este elementul neutru al adunării.</li>
+       <li>Înmulțirea matricelor pătratice este asociativă.</li>
+       <li>Matricea unitate, notată I, este elementul neutru al înmulțirii.</li>
+       <li>Puterea unei matrici \(A^n=A^{n-1} \cdot A\)</li>
+       <li> \(A^m \cdot A^n= A^{m+n}\)</li>
+       <li>\( {(A^m)}^n=A^{m \cdot n}\)</li>
+    </div>
+   
+    </div>
+    <div class="back">
+       <div id="b2" class="back-content">
+        <h2> Transpusa</h2>
+        <li>Transpusa unei matrici se notează \(A^t\) și se scrie înlocuind liniile cu coloanele matricei A.</li>
+        <h3> Relația Hamilton-Cayley</h3>
+        <img src="./11i/ch.PNG" width="100%">
+    </div>
+    </div>
+     </div>
+     <div id="p3" class="paper">
+        <div class="front">
+           <div id="f3" class="front-content">
+            <h1>Determinanți</h1>
+        <li>Regula Triunghiului.</li>
+        <img src="./11i/triunghi.PNG" width="100%"> <br>
+        <li>Regula lui Sarrus</li>
+        <img src="./11i/sarrus.PNG" width="100%"> <br>
+         </div>
+       
+        </div>
+        <div class="back">
+           <div id="b3" class="back-content">
+            <h2>Proprietățile determinanților</h2>
+            <li>det(A)=det(\(A^t\)).</li>
+            <li>Dacă matricea A are o linie nulă, det(A)=0.</li>
+            <li>Dacă în A inversăm 2 linii, se schimbă semnul determinantului.</li>
+            <li>Dacă A are 2 linii identice atunci det(A)=0.</li>
+            <li>Dacă A are 2 linii proporționale atunci det(A)=0.</li> 
+            <li>Dacă o linie este combinația liniară a celorlalte două, atunci det(A)=0</li>
+        </div>
+        </div>
+    </div>
+        <div id="p4" class="paper">
+        <div class="front">
+           <div id="f4" class="front-content">
+         <h1>Proprietăți</h1> <br>
+         <li>Numim minor algebric \(a_{ij}\), determinantul \(D_{ij}\) obținut din detA prin suprimarea liniei i și a coloanei j.</li><br>
+         <li>\(S_{ij}={(-1)}^{i+j} \cdot D_{ij}\)</li> <br>
+         <li>det(AB)= det(A) \(\ cdot\) det(B)</li> <br>
+         <li>det(\(A^k\))=\({(det(A))}^k\)</li> <br>
+         <li>\( det(a \cdot A)= a^n \cdot det(A)\)</li>
+        </div>
+       
+        </div>
+        <div class="back">
+           <div id="b4" class="back-content">
+               <h2>Determinanți particulari</h2>
+               <li>1. Vandermonde</li>
+               <img src="./11i/van.PNG" width="100%">
+                </div>
+        </div>
+    </div>
+    <div id="p5" class="paper">
+        <div class="front">
+           <div id="f5" class="front-content">
+            <h2>Determinanți particulari</h2>
+               <li>2. Triunghiulari</li> <br>
+               <li>Elementele de sub sau deasupra DP sunt egale cu 0.</li> <br>
+               <img src="./11i/tr.PNG" width="100%">
+           </div> 
+    </div>
+        <div class="back">
+           <div id="b5" class="back-content">
+            <h2>Rangul unei matrici</h2>
+            <li>Numim minor de ordin k al lui A, orice determinant format cu elementele aflate la intersecția a k linii și k coloane oarecare ale lui A.</li>
+            <li>rang A=r, atunci când există un minor de ordin r și TOȚI minorii de ordin r+1 sunt nuli.</li>
+            <li>Matricea A se numește inversabilă dacă există \(A^{-1}\) astfel ca \( A \cdot A^{-1} =A^{-1} \cdot A= I_n\)</li>
+            <li>A este inversabilă \(\iff detA \neq 0\)</li>
+        </div>
+    </div>
+    </div>
+    <div id="p6" class="paper">
+        <div class="front">
+           <div id="f6" class="front-content">
+            <h2>Calculul inversei</h2> <br><br>
+            <li> Se calculeză detA și dacă este diferit de 0 atunci există matricea inversă.</li><br>
+            <li>Se calculează \(A^t\)</li><br>
+            <li>Se calculează \(A^*\) formată din complemenții algebrici ai lui \(A^t\)</li><br>
+            <li>\(A^{-1}= \frac{1}{det(A)} \cdot A^*\)</li><br>
+        </div>      
+        </div>
+        <div class="back">
+           <div id="b6" class="back-content">
+            <h2>Proprietățile inversei</h2>
+            <li> \({(A \cdot B)}^{-1}= B^{-1} \cdot A^{-1}\)</li>
+            <li> \({(A^t)}^{-1}={(A^{-1})}^t\)</li>
+            <li>\(I_n^{-1}=I_n\)</li>
+            <li>\({(a \cdot A)}^{-1}= \frac1a \cdot A^{-1}\)</li>
+            <li>\({(A^n)}^{-1}={(A^{-1})}^n=A^{-n}\)</li>
+            <li>\(det(A^{-1})=\frac{1}{det A}\)</li>
+        </div>
+        </div>
+    </div>
+    <div id="p7" class="paper">
+        <div class="front">
+           <div id="f7" class="front-content">
+        <h2> Sisteme de ecuații liniare</h2>
+          </div>
+       
+        </div>
+        <div class="back">
+           <div id="b7" class="back-content">
+            <h2>Sisteme de ecuații liniare</h2>
+            <p>Un sistem de ecuații liniare poate fi:</p>
+            <li> incompatibil(nu are soluții)</li>
+            <li> compatibil determinat(soluție unică)</li>
+            <li> compatibil nedeterminat(mai multe soluții)</li>
+                 </div>
+        </div>
+    </div>
+    <div id="p8" class="paper">
+        <div class="front">
+           <div id="f8" class="front-content">
+            <h2>Sistem compatibil determinat</h2> <br>
+            <h2>Regula lui Cramer</h2> <br>
+            <p> Dacă m=n și \(detA \neq 0\), atunci sistemul are soluție unică
+            </p>
+            <p> Soluția sistemului este \( x_1= \frac{\Delta x_1}{ \Delta}, x_2= \frac{\Delta x_2}{ \Delta} \dots, x_n= \frac{\Delta x_n}{ \Delta}\)</p> 
+            <br>
+            <p>,iar \(\Delta x_i\) este determinantul obținut prin înlocuirea coloanei i cu coloana termenilor liberi.</p>
+        
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b8" class="back-content">
+            <h2>Sistem compatibil nedeterminat</h2> <br>
+            <p> Fie rang A=r și \( \Delta_p \neq 0\) și \( \Delta_c \neq 0\), minorul caracteristic,
+            </p> <br>
+            <p> Teorema lui Kronecker-Capelli: Sistemul este compatibil dacă rangul matricii A este același cu cel al matricii extinse.</p> 
+            <br>
+            <p>Teorema lui Rouché: Sistemul este compatibil dacă toți minorii caracteristici sunt nuli.</p>
+        
+        </div>
+        </div>
+    </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

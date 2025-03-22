@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte probleme de numărare</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/fct.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li class="is-current"> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+    <div id="p1" class="paper">
+   <div class="front">
+      <div id="f1" class="front-content">
+      <h1>Probleme de numărare</h1> <br> <br>
+      <div style="font-size: medium">
+      <li> Numim <b>permutare</b> a mulțimii A, orice mulțime ordonată formată cu cele n elemente.  </li> 
+      <p>Numărul tuturor perutărilor este \( P_n =n!\)</p> 
+      <li> Numim <b>aranjament</b>  de n elemente luate câte k, orice submulțime ordonată formată cu k din cele n elemente.</li> 
+      <p>Numărul tuturor aranjamentelor este \( A_n^k = \frac{n!}{(n-k)!}\)</p>
+      <li> Numim <b>combinare</b> de n elemente luate câte k, orice submulțime formată cu k din cele n elemente. </li> <br>
+      <p>Numărul tuturor combinărilor este \( C_n^k = \frac{n!}{k! \cdot (n-k)!}\)</p> 
+    </div>
+  </div>
+   </div>
+   <div class="back">
+      <div id="b1" class="back-content">
+        <h2>Proprietăți ale funcțiilor</h2>
+        <li> <b>Formula combinărilor complementare</b> : \(C_n^k=C_n^{n-k}\)</li> <br>
+                <li> <b>Numărul tuturor submulțimilor unei mulțimi cu n elemente</b> este : </li> <br>
+                <p>\(C_n^0+ C_n^1+ C_n^2 + \dots + C_n^n= 2^n\) </p> <br>
+                <p> \(C_n^0+ C_n^2+ C_n^4 + \dots = 2^{n-1}\) </p> <br>
+                <p> \(C_n^1+ C_n^3+ C_n^5 + \dots = 2^{n-1}\) </p> <br>
+        <br> <br>
+      </div>
+   </div>
+    </div>
+    <div id="p2" class="paper">
+      <div class="front">
+         <div id="f2" class="front-content">
+          <h1>Numărarea funcțiilor</h1> <br>
+          <p style="font-size:large"> Fie 2 mulțimi finite cu card A= m și card B=n și funcția f:A \(\rightarrow\) B</p>
+          <li> <b>Numărul tuturor funcțiilor</b> : \({(card B)}^{card A}\)</li> <br>
+          <li>Dacă \(m \le n \) atunci <b>numărul funcțiilor injective </b> este : \(A_n^m\) </li> <br>
+          <li> Dacă \(m=n \) atunci <b>numărul funcțiilor bijective </b> este : \(P_n\) </li> <br>
+          <li> Dacă \(m \le n \) atunci <b>numărul funcțiilor strict crescătoare(descrescătoare) </b> este : \(C_n^m\)</li> <br>
+     
+        </div>
+      </div>
+      <div class="back">
+         <div id="b2" class="back-content">
+            <h2>Binomul lui Newton</h2>
+                <p> \( {(a+b)}^n=\sum_{k=0}^n {C_n^k \cdot a^{n-k} \cdot b^k}\)</p> <br>
+                <li> Dezvoltarea B. N. are n+1 termeni.</li> <br>
+                <li> Termenul general al dezvoltării este \(T_{k+1}= C_n^k \cdot a^{n-k} \cdot b^k\) </li> <br>
+                <li> Raportul a 2 termeni consecutivi este \( \frac{T_{k+2}}{T_{k+1}}=\frac{n-k}{k+1} \cdot \frac ba\)</li> <br>
+           
+        </div>
+      </div>
+      </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+<script>
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const book = document.querySelector("#book");
+
+const paper1 =document.querySelector("#p1");
+const paper2 =document.querySelector("#p2");
+
+
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+let currentLocation= 1;
+let numOfPapers = 2;
+let maxLocation = numOfPapers +1;
+
+function openBook()
+{
+  book.style.transform= "translateX(50%)";
+  prevBtn.style.transform="translateX(-180px)";
+  nextBtn.style.transform="translateX(180px)";
+}
+function closeBook(isAtBeginning)
+{
+    if(isAtBeginning)
+  { book.style.transform= "translateX(0%)";}  
+    else
+  { book.style.transform= "translateX(100%)";}  
+  prevBtn.style.transform="translateX(0px)";
+  nextBtn.style.transform="translateX(0px)";
+}
+function goNextPage()
+{
+    if(currentLocation < maxLocation)
+    {
+        switch(currentLocation)
+        {
+            case 1:
+                openBook();
+                paper1.classList.add("flipped");
+                paper1.style.zIndex =1;
+                break;
+            case 2:
+                paper2.classList.add("flipped");
+                paper2.style.zIndex =2;
+                closeBook(false);
+                break;
+            default:
+                throw new Error("unkown state");
+        }
+        currentLocation++;
+    }
+}
+function goPrevPage()
+{
+    if(currentLocation >1)
+    {
+        switch(currentLocation)
+        {
+            case 2:
+                closeBook(true);
+                paper1.classList.remove("flipped");
+                paper1.style.zIndex =2;
+                break;
+            case 3:
+                openBook();
+                paper2.classList.remove("flipped");
+                paper2.style.zIndex =1;
+                break;
+            default:
+                throw new Error("unkown state");
+        }
+        currentLocation--;
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte geometrie</title>
+    <link rel="stylesheet" href="./9s/cartealg.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./9j/geo.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li class="is-current"> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+  <div id="p1" class="paper">
+ <div class="front">
+    <div id="f1" class="front-content">
+      <h1>Geometrie vectorială și analitică</h1> <br> <br>
+        <p style="font-size: medium;"> Vectorii sunt entități spațiale caracterizate prin lungime(modul,normă), direcție și sens.</p> <br>
+          <p style="font-size: medium;">Doi vectori sunt egali,\(\vec v = \vec u\), atunci când au același modul, același sens și aceeași direcție.</p>
+          <p style="font-size: medium;"> Opusul unui vector, diferă de acesta prin opoziția sensului său.</p> <br>
+          <p style="font-size: medium;"> Doi vectori se adună folosind <b>regula paralelogramului</b>, când au aceeași origine sau <b> regula triunghiului</b>, când originea unuia e în capătul celuilalt.</p> <br>
+    </div>
+
+ </div>
+ <div class="back">
+    <div id="b1" class="back-content">
+      <li> Înmulțirea unui vector cu un scalar se realizează schimbând lungimea vectorului de \( \alpha \) ori și eventual sensul când \( \alpha \) este negativ.</li>
+          <li> \( \vec v \) și \( \vec u\) sunt <b>coliniari</b> dacă au aceeași direcție sau \(\exists \; \alpha \in \mathbb{R} : \vec u= \alpha \cdot \vec v\).</li> <br>
+          <img src="./9i/vector.PNG" width="100%">
+        </div>
+
+ </div>
+  </div>
+  <div id="p2" class="paper">
+    <div class="front">
+       <div id="f2" class="front-content">
+        <h2> Vectori de poziție importanți</h2> <br>
+       
+          <li>Vectorul de poziție al lui M raportat la O, originea sistemului xOy, este \( \overrightarrow r_M= \overrightarrow{OM}\)</li>
+          <li>M este mijlocul; segmentului [AB] \( \iff \overrightarrow{OM}= \frac{1}{2}(\overrightarrow{OA}+\overrightarrow{OB})\) </li>
+          <li>M împarte segmentul [AB] în raportul \(k= \frac{MA}{MB} \) </li>
+          <li>\( \overrightarrow{OM}=\frac{1}{k+1} \cdot \overrightarrow{OA} +\frac{k}{k+1} \cdot \overrightarrow{OB}\)</li>
+       </div>
+   
+    </div>
+    <div class="back">
+       <div id="b2" class="back-content">
+           <h3> Vectori de poziție importanți</h3> <br>
+           <li>G este centrul de greutate al \( \Delta ABC \) </li>
+           <p> \( \overrightarrow{OG}=\frac{1}{3}(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC})\)</p>
+          <li>I este centrul cercului înscris în \( \Delta ABC \) cu laturile a=BC, b=AC și c=AB \(\iff \overrightarrow{OI}=\frac{a \cdot \overrightarrow {OA} + b \cdot \overrightarrow {OB}+ c \cdot \overrightarrow {OC}}{a+b+c}\) </li>
+          <li>H este ortocentrul \( \Delta ABC \) </li>
+          <p>\( \overrightarrow{OH}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\)</p>
+             </div>
+    </div>
+     </div>
+     <div id="p3" class="paper">
+        <div class="front">
+           <div id="f3" class="front-content">
+         <h2> Coliniaritate și concurență</h2> <br>
+         <li> <b>Teorema lui Menelaus </b>: Fie \( \Delta ABC \) și punctele \( A' \in BC \;, B' \in AC \; și  \;C' \in AB \) astfel încât două sunt pe laturi, iar unul pe prelungirea laturii sau toate trei pe prelungirile laturilor. Atunci A,B,C coliniare \( \iff \)</li> <br>
+         <li><b>Teorema lui Ceva </b>: Fie \( \Delta ABC \) și punctele \( A' \in BC \;, B' \in AC \; și  \;C' \in AB \). Atunci cevienele AA', BB' și CC' sunt concurente \(\iff\)</li> <br>
+         <img src="./9i/teo2.png" width="100%">
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b3" class="back-content">
+               <h2> Vectori în reperul cartezian</h2>
+               <div style="font-size: medium">
+               <li>În reperul cartezian xOy, vectorii sunt reprezentați cu ajutorul versorilor \( \vec i \; și \; \vec j\).</li>
+   <li>Dacă A(x,y), atunci \( \overrightarrow{OA}= x \cdot \vec i + y \cdot \vec j\)</li>
+   <li>Dacă \(\vec v= x \cdot \vec i + y \cdot \vec j \iff |\vec v|= \sqrt{x^2+y^2}\)</li>
+   <li>Vectorul determinat de punctele A și B este \(\overrightarrow{AB}=(x_B-x_A) \cdot \vec i + (y_B-y_A) \cdot \vec j\)</li>
+   <li>Dacă \(\vec v= x_1 \cdot \vec i + y_1 \cdot \vec j \) și \(\vec u= x_2 \cdot \vec i + y_2 \cdot \vec j \), dacă \( \vec u=\vec v \iff \; x_1=x_2 \; și \; y1=y2\). Iar dacă \( \vec u \;și \; \vec v\) sunt coliniari\(\iff \; \frac{x_1}{x_2}=\frac{y_1}{y_2}\)</li>
+  </div>
+                 </div>
+        </div>
+    </div>
+    <div id="p4" class="paper">
+      <div class="front">
+         <div id="f4" class="front-content">
+          <h2> Vectori în reperul cartezian</h2> <br>
+          <div style="font-size: large">
+            <li>Numim produsul scalar al vectorilor \(\vec u\), \(\vec v\), numărul \(\vec u \cdot \vec v=| \vec u| \cdot | \vec v| \cdot cos \theta\)</li>
+  <li>Dacă vectorii sunt perpendiculari, atunci produsul scalar e 0.</li>
+  <li>Expresia analitică a produsului scalar: \( \vec u \cdot \vec v= x_1 \cdot x_2 + y_1 \cdot y_2\)</li>
+  <li>Distanța dintre două puncte A și B este \( AB= \sqrt{(x_B-x_A)^2+(y_B-y_A)^2}\)</li>
+  <li>Coordonatele mijlocului unui segment sunt \( x_M= \frac{x_A+x_B}{2}\) și \( y_M= \frac{y_A+y_B}{2}\)</li>
+          </div>
+         </div>
+     
+      </div>
+      <div class="back">
+         <div id="b4" class="back-content">
+          <h2> Vectori în reperul cartezian</h2>
+     <div style="font-size: large">
+      <li>Coordonatele centrului de greutate unui \( \Delta ABC \) sunt \( x_G= \frac{x_A+x_B+x_C}{3}\) și \( y_G= \frac{y_A+y_B+y_C}{3}\)</li>
+      <li>Panta unei drepte reprezintă tangenta unghiului format cu axa Ox.</li>
+  <li>Panta dreptei AB este \(m_{AB}=\frac{y_B-y_A}{x_B-x_A}\)</li>
+  <li>Ecuația dreptei ce trece printr-un punct \( M_0(x_0,y_0)\) și are panta m este \( y-y_0=m(x-x_0)\).</li>
+  
+     </div>
+               </div>
+      </div>
+  </div>
+  <div id="p5" class="paper">
+    <div class="front">
+       <div id="f5" class="front-content">
+        <h2> Vectori în reperul cartezian</h2> <br>
+        <div style="font-size: large">
+          <li>Ecuația dreptei ce trece prin 2 puncte A, B este \(\frac{y-y_1}{y_2-y_1}=\frac{x-x_1}{x_2-x_1} ;\; y_2\neq y_1 \;, \; x_2 \neq x_1\)</li>
+  <li>Două drepte sunt paralele dacă pantele lor sunt egale.</li>
+  <li>Două drepte sunt perpendiculare dacă produsul pantelor este -1.</li>
+  <li>Distanța de la un punct la o dreaptă este \(d(M_0,d)=\frac{|ax_0+by_0+c|}{ \sqrt{a^2+b^2}}\)</li>
+
+        </div>
+       </div>
+   
+    </div>
+    <div class="back">
+       <div id="b5" class="back-content">
+           <h1> Sfârșit</h1>
+             </div>
+    </div>
+</div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

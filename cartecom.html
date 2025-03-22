@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte numere complexe</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./9j/trig.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li  class="is-current"> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+    <div id="p1" class="paper">
+   <div class="front">
+      <div id="f1" class="front-content">
+      <h1>Numerele complexe</h1> <br>
+      <div style="font-size:medium; padding: 20px;">
+      <p>Forma generală a unui număr complex este: \(z=a+bi; a,b \in \mathbb{R}; \; i^2=-1\)</p>
+      <p>a reprezintă partea reală a numărului z, iar b reprezintă partea imaginară a numărului z.</p>
+      <p>Două numere complexe sunt egale dacă și numai dacă părțile lor reale sunt egale,precum și părțile lor imaginare.</p>
+    </div> <br>
+      <h2>Puterile lui i</h2>
+      <br>
+      <div style="font-size:medium">
+      <p> \(i^{4k}=i^0=1\)</p>
+      <p> \(i^{4k+1}=i^1=i\)</p>
+      <p> \(i^{4k+2}=i^2=-1\)</p>
+      <p>\(i^{4k+3}=i^3=-i\)</p>
+    </div>
+  </div>
+   </div>
+   <div class="back">
+      <div id="b1" class="back-content">
+          <h2> Conjugatul și modulul unui număr complex</h2>
+          <div style="font-size:large">
+            <p> Numim conjugatul numărului complex z=a+bi, numărul complex \(\bar z= a-bi\)</p>
+            <br>
+            <p> Numim modulul numărului complex z=a+bi, numărul real pozitiv \(|z|= \sqrt{a^2+b^2}\)</p>
+          </div>
+      </div>
+   </div>
+    </div>
+    <div id="p2" class="paper">
+      <div class="front">
+         <div id="f2" class="front-content">
+          <h2>Proprietățile conjugării unui număr complex</h2> <br>
+          \( \overline{z_1+z_2+ \dots + z_n}= \bar z_1 + \bar z_2+ \dots + \bar z_n\) <br>
+          \( \overline{z_1 \cdot z_2 \cdot \dots \cdot z_n}= \bar z_1 \cdot \bar z_2 \cdot \dots \cdot \bar z_n\) <br>
+         \( \overline { z^n}= {(\bar z)}^n\) <br>
+         \( \overline{(\frac{z_1}{z_2})} = \frac{ \bar z_1}{ \bar z_2}\) <br>
+        \(Re(z)=0 \rightarrow \bar z= -z\) și z este pur imaginar.
+        </div>
+      </div>
+      <div class="back">
+         <div id="b2" class="back-content">
+          <h3>Proprietățile modulului unui număr complex</h3>
+          <div style="font-size:medium;">
+          \( |z_1+z_2+ \dots + z_n| \le |z_1| + |z_2| + \dots + |z_n|\) <br> <br>
+          \( |z_1 \cdot z_2 \cdot \dots \cdot z_n| = |z_1| \cdot |z_2| \cdot \dots \cdot |z_n|\) <br> <br>
+          \( {|z|}^n=|z^n|\) <br> <br>
+          \( | \frac{z1}{z2}|= \frac{|z_1|}{|z_2|}\) <br> <br>
+          \( z \cdot \bar z= {|z|}^2\) <br> <br>
+          \( |z|=r \iff \bar z = \frac{r^2}{z}\) <br> <br>
+        </div>
+        </div>
+       </div>
+    </div>
+       <div id="p3" class="paper">
+          <div class="front">
+             <div id="f3" class="front-content">
+              <h1>Forma trigonometrică</h1> <br> <br>
+             \( \text{Forma algebrică: } z = a + bi; \quad a, b \in \mathbb{R} \) <br>
+             \(\text{Forma trigonometrică: } z = r (\cos t + i \sin t) \) <br>
+             \( \quad r \text{ - raza polară a lui } z; \) <br>
+             \(\quad r = O M = |z| = \sqrt{a^2 + b^2} \) <br>
+             \( \quad t \text{ - argumentul redus al lui } z; \) <br>
+             \( z = \arg z = \prec (\overrightarrow{O x}, \overrightarrow{OM}); \quad t \in (0, \pi] \) <br>
+             \(\text{De asemenea:} \quad r = |z| = \sqrt{a^2 + b^2} \) <br>
+  </div>
+         
+          </div>
+          <div class="back">
+             <div id="b3" class="back-content">
+              <h2> Formule de prelucrare</h2>
+              <div style="font-size:medium;">
+               \( \text{Fie } z_1=r_1(cos t_1 +isin t_1) \text{ și }  \) \(z_2=r_2(cos t_2 +isin t_2)\)
+            </div>
+              <div style="font-size:medium;">
+              \( z_1 \cdot z_2 = r_1 \cdot r_2[ cos(t_1+t_2) + isin(t_1+t_2)]\)
+              </div>
+              \( z^n= r^nt(cosnt + isin nt)\)
+              \(\frac{z_1}{z_2}= \frac{r_1}{r_2}[cos(t_1-t_2) + isin(t_1-t_2)]\)
+              \( Z_k= \sqrt[n]{r}(cos \frac{t + 2k \pi}{n} +isin \frac{t + 2k \pi}{n}) \)
+            
+        </div>
+          </div>
+    </div>
+    <div id="p4" class="paper">
+      <div class="front">
+         <div id="f4" class="front-content">
+          <h3> Reprezentarea grafică a unui număr complex în forma trigonometrică
+          </h3>
+          <img src="./10i/pol.PNG" width="100%">
+        </div>
+     
+      </div>
+      <div class="back">
+        <div id="b4" class="back-content">
+         <h2>Sfârșit</h2>
+     </div>
+     </div>
+    </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

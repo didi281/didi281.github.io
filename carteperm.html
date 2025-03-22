@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Permutări</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/fct.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li class="is-current"> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+    <div id="p1" class="paper">
+   <div class="front">
+      <div id="f1" class="front-content">
+      <h1>Permutări</h1> <br> <br>
+      <div style="font-size: medium">
+      <li> Numim <b>permutare</b> de grad n, orice funcție bijectivă \( \sigma : A \rightarrow A\) </li> 
+      <img src="./11i/sigma.PNG" width="70%">
+      <p>Numărul tuturor perutărilor este \( S_n =n!\)</p> 
+      <li>Permutarea identică se notează cu e.</li> 
+      <p>Produsul(compunerea) permutărilor</p>
+      <img src="./11i/comp.PNG" width="90%">
+     </div>
+  </div>
+   </div>
+   <div class="back">
+      <div id="b1" class="back-content">
+        <h3>Permutări</h3>
+        <li> Numim transpoziție de gradul n, permutarea în care \( \sigma_i \text{ și } \sigma_j\) sunt așezate contrar ordinii lui i și j.</li> <br>
+        <li>Perechea (i,j) se numește inversiune dacă \( i \lt j\) și \(\sigma(i) \gt \sigma(j)\).</li> <br>
+        <li>Numărul inversiunilor lui \(\sigma\) se notează cu \( m(\sigma)\).</li>
+        <li>Se numește signatura permutării \(\sigma\), numărul \(\epsilon(\sigma)={(-1)}^{m(\sigma)}\)</li>
+        <li>Din cele n! permutări, jumătate sunt pare, iar jumătate impare.</li>
+        <br> <br>
+      </div>
+   </div>
+    </div>
+    <div id="p2" class="paper">
+      <div class="front">
+         <div id="f2" class="front-content">
+          <h1>Proprietățile signaturii</h1> <br>
+          <li> \( \epsilon(\sigma)=\epsilon(\sigma^{-1})\)</li> <br>
+          <li>\(\epsilon(\sigma \cdot \theta)=\epsilon(\sigma) \cdot \epsilon(\theta)\)</li> <br>
+          <li>\(\epsilon(\sigma^k)={(\epsilon(\sigma))}^k\)</li> <br>
+          <li>Puterea unei permutări se calculează \( \sigma^p \) astfel încât  \(\sigma^p=e\)</li> <br>
+          <li>Acest număr p reprezintă și ordinul permutării.</li>
+          <li>Orice permutare se poate scrie ca produsul unui număr de transpoziții.</li> 
+        </div>
+      </div>
+      <div class="back">
+         <div id="b2" class="back-content">
+            <h2>Sfârșit</h2>
+        </div>
+      </div>
+      </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+<script>
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+const book = document.querySelector("#book");
+
+const paper1 =document.querySelector("#p1");
+const paper2 =document.querySelector("#p2");
+
+
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+let currentLocation= 1;
+let numOfPapers = 2;
+let maxLocation = numOfPapers +1;
+
+function openBook()
+{
+  book.style.transform= "translateX(50%)";
+  prevBtn.style.transform="translateX(-180px)";
+  nextBtn.style.transform="translateX(180px)";
+}
+function closeBook(isAtBeginning)
+{
+    if(isAtBeginning)
+  { book.style.transform= "translateX(0%)";}  
+    else
+  { book.style.transform= "translateX(100%)";}  
+  prevBtn.style.transform="translateX(0px)";
+  nextBtn.style.transform="translateX(0px)";
+}
+function goNextPage()
+{
+    if(currentLocation < maxLocation)
+    {
+        switch(currentLocation)
+        {
+            case 1:
+                openBook();
+                paper1.classList.add("flipped");
+                paper1.style.zIndex =1;
+                break;
+            case 2:
+                paper2.classList.add("flipped");
+                paper2.style.zIndex =2;
+                closeBook(false);
+                break;
+            default:
+                throw new Error("unkown state");
+        }
+        currentLocation++;
+    }
+}
+function goPrevPage()
+{
+    if(currentLocation >1)
+    {
+        switch(currentLocation)
+        {
+            case 2:
+                closeBook(true);
+                paper1.classList.remove("flipped");
+                paper1.style.zIndex =2;
+                break;
+            case 3:
+                openBook();
+                paper2.classList.remove("flipped");
+                paper2.style.zIndex =1;
+                break;
+            default:
+                throw new Error("unkown state");
+        }
+        currentLocation--;
+    }
+}
+</script>
+</body>
+</html>

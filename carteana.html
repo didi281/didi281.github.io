@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte analiză</title>
+    <link rel="stylesheet" href="./9s/carteana.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./9j/ana.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li class="is-current"> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+    <div id="p1" class="paper">
+   <div class="front">
+      <div id="f1" class="front-content">
+      <h2>Șiruri. Convergență. Criterii de limită</h2> <br>
+      <p style="font-size: large;"> Cazuri de nedeterminare</p> <br>
+          <li> \(\infty - \infty; \; \infty \cdot 0; \; \frac00; \; \frac{\infty}{\infty}; \; 1^{\infty}; \; \infty^0; \; 0^0\)</li> 
+          <li style="padding: 20px"> Șirurile pot fi clasificate drept convergente(există o limită finită) sau divergente(nu există limita sau limita este infinită).</li>
+          <p style="font-size: large;"> Șiruri monotone. Șiruri mărginite</p> <br>
+          <p>Șirul \((a_n)\) este (strict) crescător, dacă \((a_n \lt a_{n+1})/ a_n \le a_{n+1}, \forall n \ge1\)</p> <br>
+          <p>Șirul \((a_n)\) este (strict) descrescător, dacă \((a_n \gt a_{n+1})/ a_n \ge a_{n+1}, \forall n \ge1\)</p> <br>
+          <p>Șirul \((a_n)\) este monoton dacă este strict crescător/descrescător.</p>
+          <p>Șirul \((a_n)\) este mărginit dacă \(\exists m,M : m \le a_n \le M, \; \forall n \ge1\)</p>
+        </div>
+   </div>
+   <div class="back">
+      <div id="b1" class="back-content">
+          <h2> Studiul monotoniei</h2>
+          <li>Metoda I:Se calculează \(a_{n+1}-a_n\). Dacă  \(a_{n+1}-a_n \lt 0\): șir descrescător, dacă \(a_{n+1}-a_n \gt 0\): șir crescător.</li>
+          <li>Metoda II: Se calculează \(\frac{a_{n+1}}{a_n}\). Dacă  \(a_{n+1}-a_n \lt 1\): șir descrescător, dacă \(a_{n+1}-a_n \gt 1\): șir crescător.</li>
+          <li>Teorema lui Weierstrass: Orice șir monoton și mărginit este convergent(are limită finită).</li>
+          <br> <br>
+      </div>
+   </div>
+    </div>
+    <div id="p2" class="paper">
+      <div class="front">
+         <div id="f2" class="front-content">
+          <h2>Studiul monotoniei</h2>
+          <li>Teoremă: Dacă un șir are limită, atunci orice subșir al său are aceeași limită.</li>
+          <li>Consecință:Dacă un șir are două subșiruri cu limite diferite, atunci șirul nu are limită.</li> <br>
+          <h2>Limite remarcabile</h2> <br>
+      <p> \( \lim_{x_n\to 0}{\frac{\sin x_n}{x_n}}=\lim_{x\to 0}{\frac{tg x_n}{x_n}}=1 \)</p>
+      <p>\( \lim_{x_n\to 0}{\frac{arcsin x_n}{x_n}}=\lim_{x\to 0}{\frac{arctg x_n}{x_n}}=1 \)</p>
+      <p>\( \lim_{x_n \to 0}{\frac{ln(1+x_n)}{x_n}}=1\)</p> 
+      <p >\( \lim_{x_n \to 0}{\frac{a^{x_n}-1}{x_n}}=ln a\)</p> 
+      <p >\( \lim_{x_n \to 0}{{(1+x_n)}^\frac{1}{x_n}}=e\)</p> 
+      <p >\( \lim_{n \to 0}{1+ \frac12 + \frac13+ \dots +\frac1n}= \infty\)</p>    
+      <p >\( \lim_{n \to 0}{1+ \frac12 + \frac13+ \dots +\frac1n -ln(n)}= c\)</p>
+    </div>
+      </div>
+      <div class="back">
+         <div id="b2" class="back-content">
+          <h3>Criterii de limită</h3>
+          <li> Criteriul cleștelui </li>
+          <p style="font-size: small;"> \( a_n \le b_n \le c_n; \; \lim_{n \to \infty}{a_n}=\lim_{n \to \infty}{c_n}=l\) atunci \(\lim_{n \to \infty}{b_n}=l\)</p>
+          <li> Criteriul raportului</li>
+          <p style="font-size: small;"> Fie \( a_n \gt 0 \; \lim_{n \to \infty}{\frac{a_{n+1}}{a_n}=l}\)</p>
+          <p style="font-size: medium;"> Dacă \(l \gt 1 \rightarrow a_n \to \infty\)</p>
+          <p style="font-size: medium;"> Dacă \(l \lt 1 \rightarrow a_n \to 0\)</p>
+          <li>Criteriul rădăcinii</li>
+          <p style="font-size: medium;"> Dacă \(a_n \gt 0 \rightarrow \lim_{n \to \infty}{\sqrt[n]{a_n}}=\lim_{n \to \infty}{\frac{a_{n+1}}{a_n}}\)</p>
+          <li>Criteriul Stolz-Cesaro</li>
+          <p style="font-size: medium;"> Dacă \(\exists \lim_{n \to \infty}{\frac{a_{n+1}-a_n}{b_{n+1}-b_n}=l}\) atunci \(\lim_{n \to \infty}{\frac{a_n}{b_n}}=l\)</p>
+        </div>
+      </div>
+       </div>
+       <div id="p3" class="paper">
+          <div class="front">
+             <div id="f3" class="front-content">
+              <h1>Limite de funcții. Continuitate</h1> <br>
+              <h2>Limite remarcabile</h2>
+              <p> \( \lim_{x\to 0}{\frac{\sin x}{x}}=\lim_{x\to 0}{\frac{tg x}{x}}=1 \)</p>
+              <p>\( \lim_{x\to 0}{\frac{arcsin x}{x}}=\lim_{x\to 0}{\frac{arctg x}{x}}=1 \)</p>
+              <p>\( \lim_{x \to 0}{\frac{ln(1+x)}{x}}=1\)</p> 
+              <p >\( \lim_{x \to 0}{\frac{a^{x}-1}{x}}=ln a\)</p> 
+              <p >\( \lim_{x \to 0}{{(1+x)}^\frac{1}{x}}=e\)</p> 
+              <br>
+              <h2>Limite laterale</h2>
+              <li> Teorema 1: Dacă există limitele laterale într-un punct \(l_s(x_0)=l_d(x_0)\), atunci există limită în acel punct.</li>
+              <li>Dacă limitele laterale sunt diferite atunci nu există limită în punctul respectiv.</li>
+  </div>
+         
+          </div>
+          <div class="back">
+             <div id="b3" class="back-content">
+              <h3> Funcții continue</h3>
+              <div style="font-size: medium;">
+                      <p> f este continuă în \(x_0 \iff l_s(x_0)=l_d(x_0)=f(x_0)\) </p>  <br>
+                      <p> \(x_0\) poate fi punct de discontinuitate de speța I( \(l_s(x_0) \neq l_d(x_0)\)) sau de speța II(limite laterale infinite). </p> 
+                      <p> Funcțiile elementare sunt continue. </p>  <br>
+                      <p> Teorema lui Weierstrass: Orice funcție continuă este mărginită și își atinge marginile. </p> <br>
+                      <p> Lema lui Bolzano: Fie \(f : [a,b] \to \mathbb{R} \text{ și } f(a) \cdot f(b) \lt 0 \) atunci f are cel puțin o rădăcină pe [a,b].</p> <br>
+                  </div>
+                </div>
+          </div>
+    </div>
+    <div id="p4" class="paper">
+      <div class="front">
+         <div id="f4" class="front-content">
+          <h3> Funcții derivabile</h3> 
+          <div style="padding:20px">
+          <p> 1.f este derivabilă în \(x_0\) dacă există \(f'(x_0)=\lim_{x \to x_0}{ \frac{f(x)-f(x_0)}{x-x_0}} \in \mathbb{R}\)</p><br>
+          <p> 2.Ecuația tangentei la grafic: \(y- f(x_0)=f'(x_0)(x-x_0)\), \(f'(x_0)\) reprezintă panta tangentei la grafic.</p><br>
+          <p> 3.Funcția are derivată în \(x_0\) dacă derivatele laterale sunt egale.</p><br>
+          <p> 4.\(x_0\) se numește punct unghiular dacă cel puțin o derivată laterală este infinită.</p><br>
+          <p> 5.\(x_0\) se numește punct de întoarcere dacă ambele derivate laterale sunt infinite și diferite..</p>
+        </div>
+      </div>
+      </div>
+      <div class="back">
+        <div id="b4" class="back-content">
+         <h2>Tabel derivate</h2>
+         <img src="./11i/derivate.PNG" width="100%" height="90%">
+     </div>
+     </div>
+    </div>
+    <div id="p5" class="paper">
+      <div class="front">
+        <div id="f5" class="front-content">
+        <h3>Rolul derivatelor în studiul funcțiilor</h3> <br>
+        <li>Determinarea intervalelor de monotonie: Dacă \(f'(x) \ge 0\) funcția este strict crescătoare. Dacă \(f'(x) \le 0\) funcția este strict descrescătoare.</li><br>
+        <li>Puncte de extrem: </li>
+        <img src="./11i/pctmaxim.PNG" width="100%"> <br>
+        <li>Determinarea intervalelor de covexitate/concavitate: Dacă \(f"(x) \ge 0\) funcția este convexă. Dacă \(f"(x) \le 0\) funcția este concavă.</li><br>
+
+      </div>
+      </div>
+      <div class="back">
+        <div id="b5" class="back-content">
+         <h3>Asimptote</h3>
+         <div style="font-size:medium">
+         <li>A. Orizontale: \(y=\lim_{x \to \infty}{f(x)} \in \mathbb{R}\), analog spre \(-\infty\)</li>
+         <li>A. Verticale: \(x=\lim_{x \to x_0}{f(x)} = \pm \infty\)</li>
+        <li>A. Oblice: y=mx+n, unde \(m=\lim_{x \to \infty}{\frac{f(x)}{x}}\), iar \(n=\lim_{x \to \infty}{f(x)-mx}\)</li>
+        <img src="./11i/asimptote.PNG" width="100%"> <br>
+      </div>
+      </div>
+     </div>
+    </div>
+      <div id="p6" class="paper">
+     <div class="front">
+        <div id="f6" class="front-content">
+          <h2>Teoreme importante</h2>
+          <div style="padding: 20px">
+          <li><b>Teorema lui Fermat:</b> Dacă f este derivabilă în \(x_0\) și \(x_0\) este punct de extrem atunci \(f'(x_0)=0\).</li> <br>
+          <li><b>Teorema lui Rolle:</b> Fie \(f: [a,b] \to \mathbb{R} \). f continuă pe [a,b], f derivabilă pe (a,b) și f(a)=f(b), atunci \(\exists c \in (a,b): f'(c)=0\)</li> <br>
+          <li><b>Teorema lui Lagrange:</b> Fie \(f: [a,b] \to \mathbb{R} \). f continuă pe [a,b], f derivabilă pe (a,b), atunci \(\exists c \in (a,b): \frac{f(b)-f(a)}{b-a}=f'(c)\)</li>
+        </div>
+        </div>
+    
+     </div>
+     <div class="back">
+        <div id="b6" class="back-content">
+            <h1> Șirul lui Rolle</h1>
+            <li>Se folosește pentru determinarea numărului de rădăcini ale unei funcții derivabile.</li>
+            <li>Se rezolvă ecuația f'(x)=0 și se obțin soluțiile \(x_1, x_2, x_3, \dots x_n\).</li>
+            <li>Se calculează limitele capetelor domeniului de definiție, dar și \(f(x_1),f(x_2), \dots f(x_n)\) și se trec în tabel.</li>
+            <li>Numărul schimbărilor consecutive de semn din tabel indică numărul de rădăcini ale lui f.</li>
+            <li>Dacă \(f(x_i)=0\) atunci \( x_i\) este rădăcină dublă.</li>
+          </div>
+     </div>
+      </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

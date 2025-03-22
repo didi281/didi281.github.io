@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte algebră</title>
+    <link rel="stylesheet" href="./9s/cartealg.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./9j/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li class="is-current"> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+  <div id="p1" class="paper">
+ <div class="front">
+    <div id="f1" class="front-content">
+    <h3 style="text-align:center; font-size:large">Formule de calcul prescurtat</h3>
+    <div>
+        \begin{aligned} (a + b)^2 &= a^2 + 2ab + b^2\end{aligned}
+            \begin{aligned}   (a - b)^2 &= a^2 - 2ab + b^2\end{aligned} 
+            \begin{aligned} (a + b + c)^2 &= a^2 + b^2 + c^2 + 2ab + 2ac + 2bc\end{aligned}
+            \begin{aligned}(a + b)^3 &= a^3 + b^3 + 3ab(a + b) \end{aligned}
+            \begin{aligned}(a - b)^3 &= a^3 - b^3 - 3ab(a - b) \end{aligned}
+            \begin{aligned}(a^3 - b^3) &= (a - b)(a^2 + ab + b^2) \end{aligned}
+            \begin{aligned}(a^3 + b^3) &= (a + b)(a^2 - ab + b^2) \end{aligned}
+        </div>
+        <div style="font-size: x-small">
+        \begin{aligned} a^n - b^n &= (a - b)(a^{n-1} + a^{n-2}b + a^{n-3}b^2 + \dots + b^{n-1})
+     \end{aligned}
+     \begin{aligned} \quad n \in \mathbb{N}, n \neq 0 \end{aligned}
+    </div>
+</div>
+ </div>
+ <div class="back">
+    <div id="b1" class="back-content">
+        <h1> Modulul</h1>
+        <p><b><u>Definiție:</u></b> Modulul sau valoarea absolută a unui număr real x, notat |x|, este numărul real luat fără semn (astfel, de exemplu, 3 este valoarea absolută a numerelor 3 și −3).</p>
+        <p style="text-align:center"><b>Formulă:</b><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b46ba1f2924cd551e6e0903ce99eb9deaa431290" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:21.142ex; height:6.176ex;" alt="{\displaystyle |x|={\begin{cases}x&amp;{\mbox{, }}x\geq 0,\\-x&amp;{\mbox{, }}x \lt 0.\end{cases}}}">
+        </p>
+    </div>
+ </div>
+  </div>
+  <div id="p2" class="paper">
+    <div class="front">
+       <div id="f2" class="front-content">
+        <h2>Proprietăți</h2> <br>
+        \( |a| \geq 0, \, \forall a \in \mathbb{R} \) <br>
+        \( |a| = |b| \iff a = b\, \text{ sau }\, a=-b \) <br>
+        \( |a + b| \leq |a| + |b|, \, \forall a, b \in \mathbb{R} \) <br>
+        \( |ab| = |a| \cdot |b|, \, \forall a, b \in \mathbb{R} \) <br>
+        \( \left| \frac{a}{b} \right| = \frac{|a|}{|b|}, \, b \neq 0 \) <br>
+        \( |x|^n=|x^n| \) <br>
+        \( |a+b|\neq|a|+|b|\) <br>
+        \( |x| \leq a \iff -a \leq x \leq a \) <br>
+        \( |x| \gt a \iff x \lt -a \, \text{ sau } \, x \gt a \) <br>
+       </div>
+   
+    </div>
+    <div class="back">
+       <div id="b2" class="back-content">
+        <h1> Radicalul</h1>
+        <p><b><u>Definiție:</u></b> Radicalul unui număr reprezintă un alt număr, care ridicat la o putere cu exponent fracționar (numitorul exponentului puterii fiind denumit ordinul radicalului) este egal cu numărul dat.</p>
+        <p style="text-align:center"><b>Formulă:</b>
+        \( \sqrt[n]{x^n} = 
+        \begin{cases} 
+        x, &n \text{ este impar } \\
+        |x|, &n \text{ este par}
+        \end{cases}, \, x \in \mathbb{R}
+        \)
+        </p>
+             </div>
+    </div>
+     </div>
+     <div id="p3" class="paper">
+        <div class="front">
+           <div id="f3" class="front-content">
+            <h1>Proprietăți</h1>
+            <br>
+            \({\sqrt[n]{a}}^n = a\)
+            \(\sqrt[n]{a} = a^{\frac{1}{n}}\)
+            \(\sqrt[n]{a^m} = a^{\frac{m}{n}}\)
+            \(\sqrt[n]{ab} =\sqrt[n]{a}\sqrt[n]{b}\)
+            \(\sqrt[n]{\frac{a}{b}} =\frac{\sqrt[n]{a}}{\sqrt[n]{b}}\)
+            \(\sqrt[n]{a^{mn}} =a^m\)
+            \( \sqrt[n]{\sqrt[m]{a}} =\sqrt[nm]{a}\)
+            <br> 
+          <h3>Formulele radicalilor compuși</h3>
+          <br>
+          \( \sqrt{a+\sqrt{b}}=\sqrt{\frac{a+\sqrt{a^2-b}}{2}}+\sqrt{\frac{a-\sqrt{a^2-b}}{2}} \)
+          \(\sqrt{a-\sqrt{b}}=\sqrt{\frac{a+\sqrt{a^2-b}}{2}}-\sqrt{\frac{a-\sqrt{a^2-b}}{2}}\)
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b3" class="back-content">
+            <h2>Partea întreagă</h2>
+            <p><b><u>Definiție:</u></b> Se numește parte întreagă a lui x cel mai apropiat întreg mai mic sau egal cu x. Notația acesteia este [x].</p>
+            <p><b>Formulă:</b> \( n\leq [x]\leq n+1,  \, n,x\in \mathbb{R} \)</p>
+            <h2>Partea fracționară</h2>
+            <p><b><u>Definiție:</u></b> Se numește parte fracționară a lui x diferența dintre număr și partea lui întreagă. Notația acesteia este {x}.</p>
+            <p><b>Formulă:</b> \(  {x}=x-[x],\forall x \in \mathbb{R}\)</p>  
+        </div>
+        </div>
+    </div>
+        <div id="p4" class="paper">
+        <div class="front">
+           <div id="f4" class="front-content">
+         <h1>Proprietăți</h1>
+         <br>
+         \([a]\in \mathbb{Z},\forall a \in \mathbb{Z}\)
+        \([a]=a,\forall a \in \mathbb{Z}\)  <br>
+        \([a]\leq a\leq[a]+1,\forall a \in \mathbb{R}\)
+        \( a \lt [a] \lt a+1,\forall a \in \mathbb{R}\)  <br>
+        \([a]=k \iff a\in \text{[k;k+1)},\forall k \in \mathbb{Z}\)
+        \([x\pm y] \neq [x]\pm[y]\)  <br>
+        \([xy] \neq [x][y]\)
+        \([x+y] = [x]+y,\forall x\in \mathbb{R} \text{ și } \forall y\in \mathbb{Z}\)  <br>
+        \({a} \in \text{[0,1)}, \forall a \in \mathbb{R} \)
+        \({a+k}={a}\in \text{[0,1)}, \forall a \in \mathbb{R} \text{ și } \forall k\in \mathbb{Z}\)
+        \([a]=a \iff \text{{a}}=0, \forall a \in \mathbb{R}\)
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b4" class="back-content">
+               <h2>Sume remarcabile</h2>
+                <p>Pentru a ușura scrierea sumelor cu mulți termeni, se utilizează litera grecească sigma mare <b> Σ </b>.</p>
+                \(\sum_{k=1}^n a_k = a_1 + a_2 + a_3 + \dots + a_n\)
+                \(\sum_{k=1}^n (a_k \pm b_k) = \sum_{k=1}^n a_k \pm \sum_{k=1}^n b_k\)
+                \(\sum_{k=1}^n (\alpha \cdot a_k) = \alpha \cdot \sum_{k=1}^n a_k\) 
+                \(\sum_{k=1}^n k = \frac{n(n+1)}{2}\)
+                \(\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}\)
+                \(\sum_{k=1}^n k^3 = \left(\frac{n(n+1)}{2}\right)^2\)
+                 </div>
+        </div>
+    </div>
+    <div id="p5" class="paper">
+        <div class="front">
+           <div id="f5" class="front-content">
+            <h2>Inegalități remarcabile</h2> <br>
+            \(a+\frac{1}{a}\ge 2\) <br>
+            \(a^2+b^2+c^2\ge ab+bc+ac, \forall a,b,c \in \mathbb{R}\) <br>
+            \(M_{aritmetica}=\frac{a_1+a_2+\dots+a_n}{n}\) <br>
+            \(M_{geometrica}=\sqrt[n]{a_1 \cdot a_2 \cdot \dots \cdot a_n}\) <br>
+            \(M_{armonica}=\frac{n}{\frac{1}{a_1}+\frac{1}{a_2}+\dots+\frac{1}{a_n}}\) <br>
+            \(M_{aritmetica} \le M_{geometrica} \le M_{armonica}\) <br>
+            <h4>Inegalitatea lui Bernoulli</h4>
+            \({(1+x)}^n \ge 1+nx, \forall n \in \mathbb{N}; \forall x \gt -1\)
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b5" class="back-content">
+            <h2>Progresii aritmetice</h2>
+            <p>Un șir de numere \((a_n)_{n \ge 1} \) se numește <u>progresie aritmetică</u> dacă fiecare termen al său, începând cu al doilea, se obține din cel precedent prin <u>adunarea</u> unei constante reale, numită <u>rația progresiei</u>.</p>
+          <p><u><b>Definiție</b></u>: \((a_n)_{n \ge 1} \) \( \frac{\cdot}{\cdot} \)
+            \(a_n=a_{n-1}+r, \forall n \ge 2 \text{ și } r\in \mathbb{R}\)</p>
+          <p><u><b>Termenul general</b></u> \(a_n=a_1+(n-1)r, n \ge 1\)</p>
+     </div>
+    </div>
+    </div>
+    <div id="p6" class="paper">
+        <div class="front">
+           <div id="f6" class="front-content">
+            <p> Trei numere a,b,c sunt în progresie aritmetică \( \iff b=\frac{a+c}{2}\)</p>
+        <p><b><u>Suma primilor n termeni</u></b>: \( S_n=a_1+a_2+ \dots +a_n \Rightarrow S_n=\frac{n(a_1+a_n)}{2}\)</p>
+       <p>Dacă \( r \gt 0\) atunci termenii progresiei sunt într-un <b>șir crescător</b>, iar dacă \( r \lt 0\)  atunci termenii progresiei sunt într-un <b>șir descrescător</b>.</p>     
+           </div>      
+        </div>
+        <div class="back">
+           <div id="b6" class="back-content">
+            <h2>Progresii geometrice</h2>
+            <p>Un șir de numere \((b_n)_{n \ge 1} \) se numește <u>progresie geometrică</u> dacă fiecare termen al său, începând cu al doilea, se obține din cel precedent prin <u>înmulțirea</u> unei constante reale, numită <u>rația progresiei</u>.</p>
+            <p><u><b>Definiție</b></u>: \((b_n)_{n \ge 1} \) \( \frac{\cdot \cdot}{\cdot \cdot} \)
+            \( b_n=b_{n-1} \cdot q, \forall n \ge 2 \text{ și } q\in \mathbb{R}\)</p>
+            <p><u><b>Termenul general</b></u> \(b_n=b_1+q^{n-1}, n \ge 1\)</p>
+            </div>
+        </div>
+    </div>
+    <div id="p7" class="paper">
+        <div class="front">
+           <div id="f7" class="front-content">
+             <p> Trei numere a,b,c sunt în progresie geometrică \( \iff b=\sqrt{ac}\)</p>
+                <p><b><u>Suma primilor n termeni</u></b>: \( S_n=b_1+b_2+ \dots +b_n \Rightarrow S_n=b_1 \cdot \frac{q^n-1}{q-1}\)</p>
+                <p>Dacă \( q \gt 0\) atunci termenii progresiei sunt într-un <b>șir crescător</b>, iar dacă \( q \lt 0\)  atunci termenii progresiei sunt într-un <b>șir descrescător</b>.</p> 
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b7" class="back-content">
+            <h2>Funcția de gradul I</h2>
+            <p> Forma generală a funcției de gradul I este <b>f(x)=ax+b;</b> \( a,b \in \mathbb{R}\)</p>
+              <h2>Tabelul de semn</h2>
+            <table>
+            <tr>
+              <th style="border-right: 1px solid black ;"> x</th>
+              <th> -\( \infty \)</th>
+              <th> -\(\frac{b}{a}\)</th>
+              <th> \( \infty \)</th>
+          
+            </tr>
+            <tr>
+              <th style="border-right: 1px solid black ;">f(x)</th>
+              <th> semnul opus lui a</th>
+              <th> 0</th>
+              <th> semnul lui a</th>
+          
+            </tr>
+          </table>
+                 </div>
+        </div>
+    </div>
+    <div id="p8" class="paper">
+        <div class="front">
+           <div id="f8" class="front-content">
+            <h1>Funcția de gradul II</h1> <br>
+            <p>Forma generală a funcției de gradul II este <b> \( f(x)=ax^2+bx+c; \)</b> \( a,b,c \in \mathbb{R}\)
+            </p>
+            <p> Graficul funcției este o <b>parabolă</b>, a cărui vârf este de abscisă \( -\frac{b}{2a} \), și ordonată \( -\frac{ \Delta}{4a} \).</p> 
+            <p>Ramurile graficului sunt influențate de valoarea lui a, astfel că dacă <b> \( a\lt 0 \) </b> atunci ramurile vor fi în jos, iar dacă <b> \( a\gt 0 \) </b> ramurile vor fi situate în sus.</p>
+              <img style=" display: block; margin-left: auto; margin-right: auto; width:100%;" src="./9i/f2.PNG">
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b8" class="back-content">
+            <p>  Atunci când \(a \lt 0\), abscisa vârfului este <b> PUNCTUL DE MINIM </b> al graficului, iar ordonata este <b> MINIMUL </b> funcției. </p>
+            <p>  Atunci când \(a \gt 0\), abscisa vârfului este <b> PUNCTUL DE MAXIM </b> al graficului, iar ordonata este <b> MAXIMUL</b> funcției. </p>
+            <p>  Semnul funcției este <b> același cu cel al lui a</b>, înafara rădăcinilor funcției și <b>contrar lui a între ele</b>.</p>
+        </div>
+        </div>
+    </div>
+    <div id="p9" class="paper">
+        <div class="front">
+           <div id="f9" class="front-content">
+            <h2>Soluțiile și semnul funcției</h2>
+            <li style="padding-inline-start: 25px;">
+              Funcția \( f(x)=ax^2+bx+c \),   iar \( \Delta= b^2-4ac\)
+            </li>
+            <p style="padding-inline-start: 25px;"> 1. \( \Delta \gt 0\) atunci există două soluții reale\((x_1,x_2) \) <b>diferite</b>.</p>
+            <p style="padding-inline-start: 25px;"> 2. \( \Delta = 0\) atunci există două soluții reale\((x_1,x_2) \) <b>egale</b>.</p>
+            <p style="padding-inline-start: 25px;"> 3. \( \Delta \lt 0\) atunci <b>NU</b> există soluții reale, dar există două soluții imaginare conjugate de forma \( x_{1,2}= \) <span style="font-size: x-large;" > \( \frac{-b \pm i \sqrt{-\Delta}}{2a} \) </span></p>
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b9" class="back-content">
+            <h2>Relațiile lui Viète</h2>
+         <p>\( S= x_1+x_2 = \) <span style="font-size: large;">\(- \frac{b}{a} \) </span></p>
+         <p>\( P= x_1x_2 = \) <span style="font-size: large;">\(\frac{c}{a} \) </span></p>
+         <p> \( x_1^2+x_2^2= S^2-2P\)</p>
+         <p> \( x_1^3+x_2^3= S^3-3SP\)</p>
+         <p><b><u>Forma ecuației</u></b>: \( x^2-Sx+P=0\)</p>
+         <p><b><u>Descompunerea în factori ireductibili</u></b></p>
+         <p> \( f(x)=a(x-x_1)(x-x_2)\)</p>
+            </div>
+        </div>
+    </div>
+    <div id="p10" class="paper">
+        <div class="front">
+           <div id="f10" class="front-content">
+            <h2>Semnul rădăcinilor ecuației de gradul II</h2>
+        \[
+        1. \quad x_1, x_2 \gt 0; ( \lt 0)\quad \iff \quad
+        \begin{cases}
+            \Delta \geq 0 \\
+            P \gt 0 \\
+            S \gt 0
+        \end{cases}
+        \]
+        
+      \[
+      2. \quad x_1 \lt 0 x_2 \quad \iff \quad
+      \begin{cases}
+          \Delta \geq 0 \\
+          P \lt 0 \\
+      \end{cases}
+      \]
+      <img style=" display: block; margin-left: auto; margin-right: auto; width:100%;" src="./9i/f3.PNG">
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b10" class="back-content">
+            <h2 id="prop" style="padding-inline-start: 40px;">
+                Proprietăți ale funcțiilor
+              </h2>
+              <p> Fie funcția \( f:A\to B \) , A reprezintă domeniul de definiție, B codomeniul funcției, iar f legea.</p>
+              <p> Graficul funcției este \( G_f = \) { \((x,f(x)) / x \in A\) } </p>
+              <p> Imaginea funcției, notată cu Imf, reprezintă mulțimea tuturor valorilor lui f. </p>
+              <p> Imf= {\(y \in B,\exists  x \in A : f(x)=y\)}</p>
+              <p> Gf \( \cap\) Ox = A(0,f(x)) </p>
+              <p> Gf \( \cap\) Oy = B(x,0) </p>
+              <p> Gf \( \cap\) Gg \( \iff f(x)=g(x)\) </p>
+              </div>
+        </div>
+    </div>
+    <div id="p11" class="paper">
+        <div class="front">
+           <div id="f11" class="front-content">
+            <h2>Clase de funcții</h2> <br>
+    <p><u><b>Definiție</b></u>: f este <b> INJECTIVĂ</b> dacă \( \forall x_1,x_2 \in A ; x_1\ \neq x_2 \Rightarrow f(x_1) \neq f(x_2)\)</p>
+    <p><u><b>Definiție</b></u>: f este <b> INJECTIVĂ</b> dacă \( \forall x_1,x_2 \in A ; f(x_1)=f(x_2) \Rightarrow x_1 \neq x_2\)</p>
+    <p><u><b>Definiție</b></u>: f este <b> SURJECTIVĂ</b> dacă \( \forall y \in B ; \exists x \in A : f(x)=y\) sau dacă Imf=B</p>
+    <p><u><b>Definiție</b></u>: f este <b> BIJECTIVĂ</b> f este injectivă și surjectivă. </p>
+    <p><u><b>Definiție</b></u>: f este <b> INVERSABILĂ</b> dacă \( \exists f^{-1} : B \to A\) astfel încât \(f(f^{-1})=x, \forall x \in B\) și \( f^{-1}(f(x))=x, \forall x \in A\)</p>
+    <p><u><b>Definiție</b></u>: f este <b> pară</b> dacă \( f(-x)=f(x), \forall x \in A\)</p>
+    <p><u><b>Definiție</b></u>: f este <b> impară</b> dacă \( f(-x)=-f(x), \forall x \in A\)</p>
+    <p><b> Paritatea</b> se studiază doar dacă A este o mulțime <b> simetrică</b>.</p>
+           </div>
+       
+        </div>
+        <div class="back">
+           <div id="b11" class="back-content">
+            <h2>Monotonia</h2> <br>
+            <p ><u><b>Definiție</b></u>: f este <b> CRESCĂTOARE</b> (strict) dacă \( \forall x_1,x_2 \in A ; x_1 \lt x_2 \Rightarrow f(x_1) \le f(x_2)\)</p>
+            <p ><u><b>Definiție</b></u>: f este <b> DESCRESCĂTOARE </b> (strict) dacă \( \forall x_1,x_2 \in A ; x_1 \lt x_2 \Rightarrow f(x_1) \ge f(x_2)\)</p>
+            <p ><u><b>Definiție</b></u>: f este <b> MONOTONĂ</b> pe A dacă funcția f este strict crescătoare sau strict descrescătoare.</p>
+            <p ><u><b>Teorema 1</b></u>: Dacă f este <b> STRICT MONOTONĂ</b> pe A \( \Rightarrow\) f este injectivă.</p>
+            <p ><u><b>Teorema 2</b></u>: Dacă f este <b> DERIVABILĂ</b> pe A și derivata este pozitivă atunci f este strict crescătoare pe A sau un subinterval. Dacă derivata este negativă atunci funcția este strict descrescătoare.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>

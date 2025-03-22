@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clasa a XII-a A</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./9s/stylesheet.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="container-wrap">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Matematică pentru <span>Admitere </span></a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="menu-items">
+                       <li> <a href="noua.html">a IX-a</a></li>
+                       <li> <a href="zece.html">a X-a</a></li>
+                       <li> <a href="a11a.html">a XI-a</a></li>
+                       <li class="is-current"> <a href="a12a.html">a XII-a</a></li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <a href="./pagp.html">Acasă</a>
+                    </div>
+                </div>
+             <div class="toggleicon">
+                <i class="bx bx-menu">
+
+                </i>
+             </div>
+            </div>
+            <div class="hero-wrapper left-content txts-wrapper">
+                <div class="text-static">
+                    Clasa a XII-a
+                </div>
+                <div class="para"> În cadrul acestei secțiuni se vor regăsi informații cu privire la grupuri, corpuri, inele, polinoame și integrale.</div>
+            </div>
+            
+</div>
+</div>
+<section id="offers">
+    <div class="title"> 
+    </div> 
+    <div class="offer-list">
+        <div class="offers-list-container">
+            <div class="offers-item">
+                <span class="heart-icon">
+                    <i class="fa fa-heart"></i>
+                </span>
+                <img src="./12i/corp.PNG">
+                <br>
+                <div class="offers-content">
+                    <span class="name"> <b> <i>Grupuri</i></b> </span>
+                    <span class="collapsible-icon"> 
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                    <div class="content">
+                        <p>Această secțiune conține informații referitoare la:</p>
+                        <p>Grupuri</p>
+                        <p>Corpuri</p>
+                        <p>Inele</p>
+                        <p>Morfisme</p>
+                        <a href="cartegrup.html">Accesează informația!</a>
+                    </div>
+                </div>
+            </div>
+        
+                <div class="offers-item">
+                    <span class="heart-icon">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    <img src="./12i/analiza.PNG">
+                    <br>
+                    <div class="offers-content">
+                        <span class="name"> <b><i>Analiză</i></b></span>
+                        <span class="collapsible-icon"> 
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <div class="content">
+                        <p>Această secțiune conține informații referitoare la:</p>
+                        <p>Integrale nedefinite</p>
+                        <p>Integrale definite</p>
+                        <p>Teorema Leibniz-Newton</p>
+                        <a href="carteint.html">Accesează informația!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers-item">
+                    <span class="heart-icon">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    <img src="./12i/polinom.PNG">
+                    <br>
+                    <div class="offers-content">
+                        <span class="name"> <b><i>Polinoame</i></b></span>
+                        <span class="collapsible-icon"> 
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <div class="content">
+                            <p>Această secțiune conține informații referitoare la:</p>
+                            <p>Schema lui Horner</p>
+                            <p>Divizibilitate</p>
+                            <p>Polinoame ireductibile</p>
+                            <p>Teorema lui Bezout</p>
+                            <a href="cartepol.html">Accesează informația!</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<script src="./9j/script.js">
+
+</script>
+<script>
+    const navItems = document.querySelectorAll(".menu-items li");
+    navItems.forEach(item => {
+        item.addEventListener('click', function(){
+            navItems.forEach(nav => nav.classList.remove('is-current'));
+            this.classList.add('is-current')
+        })
+    });
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+        const toggleIcon = document.querySelector('.toggleicon');
+        const navMenu = document.querySelector('.nav-menu');
+        toggleIcon.addEventListener('click', ()=> {
+            navMenu.classList.toggle('active');
+            toggleIcon.classList.toggle('active');
+        })
+    });
+ </script>
+</body>
+</html>

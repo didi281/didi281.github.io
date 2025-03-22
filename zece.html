@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clasa a X-a A</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./9s/stylesheet.css">
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="container-wrap">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Matematică pentru <span>Admitere </span></a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="menu-items">
+                       <li> <a href="noua.html">a IX-a</a></li>
+                       <li class="is-current"> <a href="a10a.html">a X-a</a></li>
+                       <li> <a href="a11a.html">a XI-a</a></li>
+                       <li> <a href="a12a.html">a XII-a</a></li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <a href="./pagp.html">Acasă</a>
+                    </div>
+                </div>
+             <div class="toggleicon">
+                <i class="bx bx-menu">
+
+                </i>
+             </div>
+            </div>
+            <div class="hero-wrapper left-content txts-wrapper">
+                <div class="text-static">
+                    Clasa a X-a
+                </div>
+                <div class="para"> În cadrul acestei secțiuni se vor regăsi informații cu privire la funcțiile exponențiale și logaritmice, probleme de numărare și numere complexe.</div>
+            </div>
+            
+</div>
+</div>
+<section id="offers">
+    <div class="title"> 
+    </div> 
+    <div class="offer-list">
+        <div class="offers-list-container">
+            <div class="offers-item">
+                <span class="heart-icon">
+                    <i class="fa fa-heart"></i>
+                </span>
+                <img src="./10i/log.PNG">
+                <br>
+                <div class="offers-content">
+                    <span class="name"> <b> <i>Exponențiale și Logaritmi</i></b> </span>
+                    <span class="collapsible-icon"> 
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                    <div class="content">
+                        <p>Această secțiune conține informații referitoare la:</p>
+                        <p>Forma acestora</p>
+                        <p>Proprietățile lor</p>
+                        <p>Formule</p>
+                        <p>Modul în care sunt comparate</p>
+                        <a href="cartefct.html">Accesează informația!</a>
+                    </div>
+                </div>
+            </div>
+        
+                <div class="offers-item">
+                    <span class="heart-icon">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    <img src="./10i/num.PNG">
+                    <br>
+                    <div class="offers-content">
+                        <span class="name"> <b><i>Metode de numărare</i></b></span>
+                        <span class="collapsible-icon"> 
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <div class="content">
+                        <p>Această secțiune conține informații referitoare la:</p>
+                        <p>Permutări</p>
+                        <p>Combinări</p>
+                        <p>Aranjamente</p>
+                        <p>Proprietăți.Binomul lui Newton</p>
+                        <a href="carteprobn.html">Accesează informația!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers-item">
+                    <span class="heart-icon">
+                        <i class="fa fa-heart"></i>
+                    </span>
+                    <img src="./10i/comp.PNG">
+                    <br>
+                    <div class="offers-content">
+                        <span class="name"> <b><i>Numere complexe</i></b></span>
+                        <span class="collapsible-icon"> 
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                        <div class="content">
+                            <p>Această secțiune conține informații referitoare la:</p>
+                            <p>Forma unui număr complex</p>
+                            <p>Puterile lui i</p>
+                            <p>Proprietățile conjugării/modulului unui număr complex</p>
+                            <p>Forma trigonometrică</p>
+                            <a href="cartecom.html">Accesează informația!</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<script src="./9j/script.js">
+
+</script>
+<script>
+    const navItems = document.querySelectorAll(".menu-items li");
+    navItems.forEach(item => {
+        item.addEventListener('click', function(){
+            navItems.forEach(nav => nav.classList.remove('is-current'));
+            this.classList.add('is-current')
+        })
+    });
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+        const toggleIcon = document.querySelector('.toggleicon');
+        const navMenu = document.querySelector('.nav-menu');
+        toggleIcon.addEventListener('click', ()=> {
+            navMenu.classList.toggle('active');
+            toggleIcon.classList.toggle('active');
+        })
+    });
+ </script>
+</body>
+</html>

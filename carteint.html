@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte integrale</title>
+    <link rel="stylesheet" href="./9s/cartetrig.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="./10j/fct.js" defer></script>
+    <script src="https://kit.fontawesome.com/3a5042ecb0.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div class="header-wrapper">
+        <div class="container-wrap">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Matematică pentru <span>Admitere </span></a>
+        </div>
+        <div class="nav-menu">
+            <ul class="menu-items">
+               <li> <a href="noua.html">a IX-a</a></li>
+               <li> <a href="zece.html">a X-a</a></li>
+               <li> <a href="a11a.html">a XI-a</a></li>
+               <li class="is-current"> <a href="a12a.html">a XII-a</a></li>
+            </ul>
+            <div class="btn-wrap">
+                <a href="pagp.html">Acasă</a>
+            </div>
+        </div>
+     <div class="toggleicon">
+        <i class="bx bx-menu">
+        </i>
+     </div>
+    </div>
+</div>
+</div>
+<br> <br>
+<div class="carte">
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i>
+  </button>
+  <div id="book" class="book">
+  <div id="p1" class="paper">
+ <div class="front">
+    <div id="f1" class="front-content">
+      <h1>Primitive</h1> <br> <br>
+      <div style="font-size:large">
+      <li>F se numește primitivă a lui f dacă F este derivabilă și \(F'(x)=f(x)\).</li>
+      <li>f admite primitive dav[ f este o funcție continuă.</li>
+      <li>Mulțimea tuturor primitivelor lui f se numește integrala nedefinită a lui f și se notează \(\int f(x) dx\)</li>
+      <li>Oricare două primitive F1 și F2 diferă printr-o constantă.</li>
+      <li>Dacă f are discontinuități pe domeniul său de definiție atunci f nu admite primitive.</li>
+    </div>
+    </div>
+
+ </div>
+ <div class="back">
+    <div id="b1" class="back-content">
+        <img src="./12i/integrale.PNG" width="100%" height="100%">
+        </div>
+
+ </div>
+  </div>
+  <div id="p2" class="paper">
+    <div class="front">
+       <div id="f2" class="front-content" style="padding: 20px">
+        <h2> Metode de calcul ale integralei</h2> <br>
+        <li> Metoda integrării prin părți: </li> 
+        <p style="font-size:small"> \( \int{f(x) \cdot g'(x)}dx= f(x) \cdot g(x) -\int{f'(x) \cdot g(x)}dx \)</p> 
+        <li>Metoda schimbării de variabilă: \(\int f(u(x)) dx = \int f(t) dt =F(t)+ C \)</li> 
+        <li>Practic, s-a realizat schimbarea variabilei x cu t, notând \(u(x)=t \to u'(x)=dt \)</li> 
+        <li> \(\int f'(x) dx=f(x)+C\) </li>
+    </div>
+   
+    </div>
+    <div class="back">
+       <div id="b2" class="back-content">
+           <h3> Integrale definite</h3>
+           <div style="font-size:medium">
+           <li>Formula Leibnitz-Newton: \( \int_a^b f(x) dx= \left.F(x)\right\rvert_a^b=F(a)-F(b)\)</li> <br>
+           <h3>Proprietăți</h3>
+           <div style="font-size: small">
+           <li>\(\int_a^b (k \cdot f(x)) dx = k \cdot \int_a^b f(x) dx, \quad k \in \mathbb{R}\)</li> <br>
+           <li>\(f(x) \pm g(x) = \int_a^b f(x) dx \pm \int_a^b g(x) dx\)</li> <br>
+           <li>\(\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x) dx\)</li> <br>
+           <li>\(\text{Dacă}\ f(x) \geq 0, \ \forall x \in [a, b], \ \Rightarrow \) \( \int_a^b f(x) dx \geq 0\)</li> <br>
+           <li>\( \text{Dacă}\ f(x) \leq g(x), \ \forall x \in [a, b], \ \Rightarrow \) \( \int_a^b f(x) dx \leq \int_a^b g(x) dx\)</li> <br>
+           <li>\(\left| \int_a^b f(x) dx \right| \leq \int_a^b |f(x)| dx\)</li> <br>
+        </div>
+        </div>
+          </div>
+    </div>
+     </div>
+     <div id="p3" class="paper">
+        <div class="front">
+           <div id="f3" class="front-content">
+         <h2>Sume Riemann</h2> <br>
+         <li> Fie \(f: [0,1] \to \mathbb{R}\) integrabilă \(\lim_{n \to \infty}a_n= \int_0^1 f(x)dx\)</li> <br>
+         <img src="./12i/riemann.PNG" width="100%" >
+         </div>
+       
+        </div>
+        <div class="back">
+           <div id="b3" class="back-content">
+               <h2> Teorema de medie</h2>
+               <div style="font-size: small">
+               <li> \(\text{Dacă}\ f: [a, b] \to \mathbb{R} \ \text{este continuă pe} \ [a, b], \) \( \ \text{atunci există}\ c \in (a, b) \ \text{astfel încât:}\) \( \int_a^b f(x) dx = (b - a) \cdot f(c) \)</li> <br>
+               <li> \(\text{Fie} \ f: [-a, a] \to \mathbb{R} \ \text{continuă}. \ \text{Atunci:} \) \( \int_{-a}^a f(x) dx = \int_0^a [f(x) + f(-x)] dx\)</li> <br>
+               <li> \(\text{Dacă} \ f \ \text{este impară} \Rightarrow \int_{-a}^a f(x) dx = 0\)</li>
+               <li> \( f \ \text{este pară} \Rightarrow \int_{-a}^a f(x) dx = 2 \int_0^a f(x) dx\)</li>
+            </div>
+               <h2> Aplicații</h2>
+               <div style="font-size: small">
+               <li> \(\text{Dacă}\ f: [a, b] \to \mathbb{R} \ \text{este continuă} \) \( \ \text{atunci aria mulțimii plane mărginită de Gf,Ox} \) \(\text{și dreptele de ecuații x=a și x=b} \) \( A(D)=\int_a^b f(x) dx \)</li> <br>
+               <li> \(\text{Dacă în loc de Ox avem Gg atunci aria:} \) \( A(D)=\int_a^b |f(x)-g(x)| dx \)</li> <br>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</div>
+</body>
+</html>
