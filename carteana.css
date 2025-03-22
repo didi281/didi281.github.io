@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+  body{
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #191919;
+}
+.book{
+    position: relative;
+    width: 350px;
+    height:500px;
+    transition: transform 0.5s;
+}
+.paper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    perspective: 1500px;
+}
+.front,
+.back{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front{
+    z-index: 1; 
+    backface-visibility: hidden;
+    border-left: 3px solid #1e2228;
+}
+.back{
+    z-index: 0;
+}
+.front-content, 
+.back-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back-content{
+    transform: rotateY(180deg);
+}
+.flipped .front, 
+.flipped .back{
+    transform: rotateY(-180deg);
+}
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+button:focus{
+    outline: none;
+
+}
+button:hover i{
+    color: #636363
+}
+i{
+    font-size: 4em;
+    color: gray;
+}
+#p1{
+    z-index: 6;
+}
+#p2{
+    z-index: 5;
+}
+#p3{
+    z-index: 4;
+}
+#p4{
+    z-index: 3;
+}
+#p5{
+    z-index: 2;
+}
+#p6{
+    z-index: 1;
+}
+
+.header-wrapper{
+    width: 100%;
+}
+.container-wrap{
+    max-width: 1250px;
+    width: 100%;
+    margin:0 auto;
+    padding:0 15px;
+}
+.navbar{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.navbar .toggleicon{
+    display: none;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.navbar .logo a span{
+    color: #ff4a6e;
+}
+.navbar .nav-menu{
+     display: flex;
+     align-items: center;
+     gap: 40px;
+}
+.navbar .menu-items{
+    display: flex;
+    list-style: none;
+    text-align:center;
+}
+.navbar .menu-items li{
+    margin: 0 25px;
+}
+.navbar .menu-items li a{
+   color: #fff;
+   padding: 20px 0;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 500;
+   text-transform: capitalize;
+   transition: color 0.3s ease;
+   display: inline-block;
+   position: relative;
+   letter-spacing: 1px;
+}
+.navbar .menu-items li a::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #f9004d;
+    transition: 0.3;
+    bottom: 0;
+}
+.navbar .menu-items li.is-current
+a::after{
+ width: 100%;
+}
+.navbar .menu-items li.is-current a, 
+.navbar .menu-items li a:hover{
+    color: #ff4a6e;
+}
+.btn-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+.btn-wrap a{
+    padding: 10px 25px;
+    color: #fff;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #ff4a6e;
+    letter-spacing: 2px;
+}
+.btn-wrap a:hover{
+    background: #ff4a6e;
+    transform: translateY(-2px);
+    border: 2px solid #f9004d;
+
+}
+.carte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+#f1{
+    font-size: small;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#f2,#f3,#f4,#f5,#f6{
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+#b1,#b2,#b3,#b4,#b5,#b6{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    justify-content: space-around;
+}
+
+#b1,#b2,#b3,#b4,#b5 p{
+    margin-bottom: 20px;
+}
+
+#b2 h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
